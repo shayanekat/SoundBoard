@@ -31,6 +31,9 @@ def shine():
 def nani():
     winsound.PlaySound(".\sounds\what",winsound.SND_FILENAME)
 
+def yeah():
+    winsound.PlaySound(".\sounds\yeah",winsound.SND_FILENAME)
+
 # ====frontend====
 root = Tk()
 root.title("Sound Board")
@@ -65,6 +68,9 @@ b22.grid(row=3,column=1,padx=5,pady=5)
 
 b23 = Button(root,text="NANNI",command=nani)
 b23.grid(row=3,column=2,padx=5,pady=5)
+
+b24 = Button(root,text="YEAH!",command=yeah)
+b24.grid(row=3,column=3,padx=5,pady=5)
 
 
 root.mainloop()
